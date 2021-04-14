@@ -535,3 +535,30 @@ html {
     grid-template-columns: repeat(1, 250px);
   }
 }
+
+/* ============================ */
+/* search_pagination */
+/* ============================ */
+.search_pagination {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.search_pagination span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(240, 240, 240);
+  width: 30px;
+  height: 30px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #5f5f5f;
+}
+.search_pagination span:hover {
+  background: var(--mud-red);
+  color: #fff;
+}
