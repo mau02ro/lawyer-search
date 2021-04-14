@@ -69,6 +69,206 @@ html {
 /* search_filter */
 /* ========================= */
 
+#search_filter {
+  width: 90%;
+  max-width: 1160px;
+  margin: 30px auto;
+  padding: 30px 0;
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+}
+
+/* -------------------------------- */
+/* Form */
+/* -------------------------------- */
+#search_filter form,
+.search_filter-inputs,
+.search_filter-options_container,
+.search_filter-buttons {
+  display: flex;
+}
+#search_filter form {
+  width: 100%;
+}
+/* -------------------------------- */
+/* Inputs */
+.search_filter-inputs {
+  width: 75%;
+}
+.search_filter-input {
+  width: 45%;
+  margin: 0;
+  font-size: 16px;
+  padding: 6px 16px;
+  height: 34px;
+  border-radius: 6px;
+  background-color: var(--light-grey);
+  color: #181818;
+  border: none;
+}
+.search_filter-input:focus,
+.search_filter-buttons button:focus {
+  outline: none;
+}
+.search_filter-input::placeholder,
+.search_filter-options input[value="all"] ~ button {
+  color: #555555;
+}
+
+/* -------------------------------- */
+/* options */
+.search_filter-options_container {
+  justify-content: space-between;
+  width: 55%;
+  padding: 0 20px;
+}
+.search_filter-options {
+  width: 47.7%;
+  position: relative;
+}
+.search_filter-options span {
+  display: none;
+}
+.search_option-btn {
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 9px 14px;
+  text-align: left;
+  font-size: 1.6rem;
+  height: 34px;
+  background-color: #e5e5e5;
+  color: #181818;
+  border: none;
+
+  background-image: url("./assets/arrow_down-1.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+
+  position: relative;
+  z-index: 200;
+}
+.search_option-btn:focus {
+  outline: none;
+}
+
+.search_options-list {
+  position: absolute;
+  z-index: 100;
+  padding-top: 10px;
+  width: 102%;
+  left: -1%;
+  height: min-content;
+  max-height: 300px;
+  overflow-y: scroll;
+  background: #f8f8f8;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(184, 184, 184, 0.5);
+  border-radius: 5px;
+  display: none;
+}
+.search_options-list::-webkit-scrollbar {
+  width: 10px;
+}
+.search_options-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+  width: 10px;
+}
+
+.search_options-item {
+  font-size: 1.6rem;
+  padding: 15px 13px 13px;
+  border-bottom: 1px solid #d8d8d8;
+  cursor: pointer;
+}
+.search_options-item:hover {
+  color: #a61e2a;
+  border-bottom: 1px solid #a61e2a;
+}
+/* -------------------------------- */
+/* buttons */
+.search_filter-buttons {
+  justify-content: space-between;
+  width: 25%;
+}
+.search_filter-buttons button {
+  display: block;
+  width: 47%;
+  background: var(--mud-red);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  min-width: 80px;
+  padding: 9px 0;
+}
+.search_filter-buttons button:hover {
+  background-color: var(--blue-ocean);
+  /* color: #a3212f; */
+}
+
+@media screen and (max-width: 768px) {
+  #search_filter form {
+    flex-flow: column;
+  }
+  /* -------------------------------- */
+  /* Inputs */
+  .search_filter-inputs {
+    width: 100%;
+  }
+  .search_filter-input {
+    width: 50%;
+    margin-right: 15px;
+  }
+  /* -------------------------------- */
+  /* options */
+  .search_filter-options_container {
+    width: 50%;
+    padding: 0;
+  }
+  /* -------------------------------- */
+  /* buttons */
+  .search_filter-buttons {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .search_filter-buttons button {
+    width: 48.8%;
+  }
+}
+@media screen and (max-width: 590px) {
+  /* -------------------------------- */
+  /* Inputs */
+  .search_filter-inputs {
+    flex-flow: column;
+  }
+  .search_filter-input {
+    width: 100%;
+    margin-right: 0;
+  }
+  /* -------------------------------- */
+  /* options */
+  .search_filter-options_container {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .search_filter-options {
+    width: 48.5%;
+  }
+}
+
+/* -------------------------------- */
+/* assss */
+.show_list {
+  display: block;
+}
+
 /* ========================= */
 /* search_cards */
 /* ========================= */

@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./filter.css" />
   </head>
   <body>
     <!-- branding: https://www.conesalegal.com/en/
@@ -39,45 +38,46 @@
 
             <div class="search_filter-options_container">
               <div class="search_filter-options">
-                <input type="hidden" value="all" />
+                <input type="hidden" name="position" value="all" />
+                <span>Position</span>
                 <button type="button" class="search_option-btn">
                   Position
                 </button>
                 <ul class="search_options-list">
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
+                  <li class="search_options-item">Hello 1</li>
+                  <li class="search_options-item">Hello 2</li>
+                  <li class="search_options-item">Hello 3</li>
+                  <li class="search_options-item">Hello 4</li>
                 </ul>
               </div>
 
               <div class="search_filter-options">
-                <input type="hidden" value="all" />
+                <input type="hidden" name="office" value="all" />
+                <span>Office</span>
                 <button type="button" class="search_option-btn">Office</button>
                 <ul class="search_options-list">
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
-                  <li class="search_options-item">Hello</li>
+                  <li class="search_options-item">Hello 1</li>
+                  <li class="search_options-item">Hello 2</li>
+                  <li class="search_options-item">Hello 3</li>
+                  <li class="search_options-item">Hello 4</li>
+                  <li class="search_options-item">Hello 5</li>
+                  <li class="search_options-item">Hello 6</li>
+                  <li class="search_options-item">Hello 7</li>
+                  <li class="search_options-item">Hello 8</li>
+                  <li class="search_options-item">Hello 9</li>
+                  <li class="search_options-item">Hello 10</li>
+                  <li class="search_options-item">Hello 11</li>
+                  <li class="search_options-item">Hello 12</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div class="search_filter-buttons">
-            <button type="reset">Clear</button>
+            <button type="reset" id="searchFilter_clearBtn">Clear</button>
             <button type="submit">Search</button>
           </div>
         </form>
-        <div id="search_filter-alphabet"></div>
       </section>
 
       <!-- ======================= -->
